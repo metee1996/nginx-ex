@@ -2,9 +2,9 @@ stages:
 - name: build
   steps:
   - applyAppConfig:
-      catalogTemplate: cattle-global-data:alibaba-app-hub-nginx
+      catalogTemplate: p-v28mr:alibaba-app-hub-nginx
       version: 5.1.5
       name: web
-      targetNamespace: default
+      targetNamespace: p-v28mr-pipeline
 timeout: 60
 notification: {}
